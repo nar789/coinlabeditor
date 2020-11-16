@@ -8,6 +8,10 @@
         res.render("index.html", {});
       });
 
+      app.get("/bus", function (req, res) {
+        res.render("busstop.html", {});
+      });
+
       //1. enetry point
       app.listen(1115, function () {
         console.log("COINLAB#EDITOR Server listen on *:1115");
